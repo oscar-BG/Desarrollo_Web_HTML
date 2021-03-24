@@ -1,0 +1,27 @@
+h1{
+    color: rgb(201, 47, 47);
+    text-align: center;
+}
+
+/*Coloca un color a los link no visitados*/
+a:link{
+    color: coral;
+    text-decoration: none; /*Ninguna decoracion*/
+}
+
+/*Coloca un color a los links ya visitado*/
+a:visited{
+    color: darkgreen;
+    text-decoration: none;
+}
+
+/*Coloca un color cuando el cursor esta sobre el link*/
+a:hover{
+    color: darkmagenta;
+    text-decoration: underline; /*subrayado*/
+}
+
+/*Coloca un color cuando le damos clik al link*/
+a:active{
+    color: red;
+}

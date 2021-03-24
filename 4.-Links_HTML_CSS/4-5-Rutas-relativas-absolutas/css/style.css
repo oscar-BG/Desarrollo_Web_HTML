@@ -1,0 +1,21 @@
+h1{
+    color: rgb(201, 47, 47);
+    text-align: center;
+    font-size: 50px;
+}
+
+/*Coloca un color a los link no visitados & visitados*/
+a:link, a:visited{
+    background-color: gold;
+    padding: 10px 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none; /*Ninguna decoracion*/
+    display: inline-block; /*para que no se encimen los elementos*/
+}
+
+/*Coloca un color a los link activos y cuando pasmos el cursor sobre ellos*/
+a:active, a:hover{
+    background-color: darkgoldenrod;
+    text-decoration: none;
+}
+
