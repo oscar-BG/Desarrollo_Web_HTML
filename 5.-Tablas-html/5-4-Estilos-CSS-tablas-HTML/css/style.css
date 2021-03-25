@@ -1,0 +1,31 @@
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    /* Muestra solo una linea alrededor de la tabla*/
+    border-collapse: collapse;
+    /* aumenta los espacios cuando la tabla esta calapsado*/
+    /*border-spacing: 5px;*/
+    padding: 5px;
+}
+caption{
+    color: #e63946;
+    font-family: 'Trocchi',serif;
+    font-size:45px;
+    line-height: 70px;
+}
+
+th{
+    color:#f1faee;
+    background-color: #1d3557;
+}
+/* :nth-child(): funcion para seleccionar los reglones*/
+/* even: paramentros para seleccionar los reglones pares*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+/*odd: paramentro para seleccionar los reglones impares*/
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}

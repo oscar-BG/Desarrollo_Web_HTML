@@ -1,0 +1,15 @@
+table, th, td{
+    border: 1px solid black;
+    /* Muestra solo una linea alrededor de la tabla*/
+    border-collapse: collapse;
+    /* aumenta los espacios cuando la tabla esta calapsado*/
+    /*border-spacing: 5px;*/
+    padding: 5px;
+}
+/*
+td{
+    text-align: center;
+}
+th{
+    text-align: left;
+}*/
