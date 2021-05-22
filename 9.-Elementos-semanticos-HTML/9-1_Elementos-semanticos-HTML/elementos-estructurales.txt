@@ -1,0 +1,7 @@
+section : Indica una nueva secsion en nuestro HTML, definen una region dentro de nuestro html
+article: Elementos independientes, pueden tener su propio titulo y reutilizar en una pagina web
+aside: Se muestra en la barra lateral, muestra informacion extra de un articulo o de la pagina web
+header: Muestra la cabezera de la pagina web
+footer: Se muestra en el pie de pagina 
+hgroup: Encerrar elemento de titulo de h1 - h6
+nav: encierra lo lugares donde podemos colocar barra de navegacions

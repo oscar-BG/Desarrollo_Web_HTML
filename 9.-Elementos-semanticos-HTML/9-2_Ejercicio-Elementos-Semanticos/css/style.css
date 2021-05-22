@@ -1,0 +1,43 @@
+header{
+    color: #ffb703;
+    text-align: center;
+    font-size: 40px;
+}
+nav{
+    width: 20%;
+    float: left;
+}
+nav a{
+    background-color: #001d3d;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+section{
+    width: 75%;
+    float: right;
+    color: #660708;
+    box-shadow: 1px 0 4px rgb(0, 0, 0, .2);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+}
+footer{
+    /*Los elemntos flotantes dejan de tener efecto */
+    clear: both;
+    padding: 1px;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
