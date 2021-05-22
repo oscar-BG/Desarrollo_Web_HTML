@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <h2>Ejmplo con method GET</h2>
+    <form method="GET">
+        <!--Etiqueta fieldset: crea un marco que encierra a todo los elementos de la etiqueta-->
+        <!--Legend: Le pone nombre al marco de fieldser-->
+        <fieldset>
+            <legend>Datos persona:</legend>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+            <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+            <!--type email: reconoce la estructura de un correo electronico-->
+            <input type="email" id="email" name="email" placeholder="Correo electronico" required="true"><br>
+            <!--Type number: acepto solo numero
+                step="any": acepta valores decimales-->
+            <input type="number" id="edad" name="edad" placeholder="Ingrese tu edad" step="any"><br>
+
+            <label>Genero</label>
+            <!--Si queremos que el usuario solo marque un radio button tenemos que ponerles el mismo valor a name-->
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <!--## Checkboxes ##-->
+            <!--Checkbox: podemos seleccionar una o varias opciones el valor de name debe ser el mismo de cada grupo de checkbox
+                los valores de los checkbox de envias como arreglos lo que significa que puedo contener o mas valores-->
+            <label>Genero de Musica Favoritas</label><br>
+            <input type="checkbox" id="clasica" name="musica" value="clasica">
+            <label for="clasica">clasica</label><br>
+            <input type="checkbox" id="jazz" name="musica" value="jazz">
+            <label for="jazz">jazz</label><br>
+            <!--Select -->
+            <!-- La propiedad de selected muestra como el valor seleccionado por defecto-->
+            <!-- La propiedad miltiple="true no permite seleccionar mas de un valor, se coloca en la etiqueta select" -->
+            <label for="autos">Marca Auto favorita</label><br>
+
+            <select id="autos" name="autos">
+                <option value="volvo">Volco</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="0" selected="true">Seleccionar</option> 
+            </select><br>
+
+            <label for="comentario"> Comendario</label><br>
+
+            <!--Text area: permite escribir mas de una linea-->
+            <textarea id="comentario" name="comentario" rows="2" cols="30"></textarea><br> 
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

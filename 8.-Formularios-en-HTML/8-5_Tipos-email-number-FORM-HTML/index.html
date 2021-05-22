@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <h2>Ejmplo con method GET</h2>
+    <form method="GET">
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+        <!--type email: reconoce la estructura de un correo electronico-->
+        <input type="email" id="email" name="email" placeholder="Correo electronico" required="true"><br>
+        <!--Type number: acepto solo numero
+            step="any": acepta valores decimales-->
+        <input type="number" id="edad" name="edad" placeholder="Ingrese tu edad" step="any"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

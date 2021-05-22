@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!--Cuando necesitemos que el usuario ingre un valor obligatorio podemos usar el atributo required-->
+    <!--cuando el usuario no escribe un valor cuando el cambo es requerido el formulario no actua-->
+    <h1>Ejmplo con required</h1>
+    <form>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h1>Ejemplo 2 con novalidate</h1>
+    <!--Si queremos que todos los input puedan enviarse con valores vacios 
+        agregamos el atributo novalidate en el formulario-->
+    <form novalidate>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Ejemplo 3 con formnovalidate</h1>
+    <!--Cuando agregamos el atributo formnovalidate los datos se envian aun que sus valores sean vacios
+        y tambien ignora al atributo required de los input-->
+    <form>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="tru"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+
+        <input type="submit" formnovalidate value="Enviar sin validar">
+    </form>
+</body>
+</html>

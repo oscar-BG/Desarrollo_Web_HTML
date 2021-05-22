@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <!--URL de nuestro navegador cuando enviamos parametros se le conoce como query string-->
+    <!--GET es un metodo para enviar informcion al servidor, los valores enviados se viualizan en en query string-->
+    <h2>Ejmplo con method GET</h2>
+    <form method="GET">
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+        <!--Type=password: oculta los caracteres que ingresamos-->
+        <input type="password" id="password" name="password" placeholder="ingrese contraseña" required="true">
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h2>Ejemplo con method POST</h2>
+    <!--POST es un metodo que enviar los datos como parte del mensaje HTTP por lo que no es  visible, se utiliza cuando queremos 
+        enviar informacion sensible-->
+    <form method="POST">
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="true"><br>
+
+        <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"><br>
+
+        <input type="text" id="materno" name="materno" placeholder="Segundo apellido"><br>
+
+        <input type="password" id="password" name="password" placeholder="ingrese contraseña" required="true">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
